@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 import sys
-sys.path.append("/Users/okamuuu/project/hello/app/lib")
+sys.path.append("./app/lib")
 import types
 import unittest
 import base62

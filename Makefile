@@ -1,10 +1,8 @@
-all: touch start
+all: mongod 
 
-start:
-	@mongod --dbpath=db/
-
-touch:
-	@touch db/
+mongod:
+	@touch data/
+	@mongod --dbpath=data/
 
 export:
 	@mongoexport -d urlshortener -c urls > test/data/urls.json

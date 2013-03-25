@@ -1,4 +1,7 @@
 .DS_Store
 hardcopy.*
 db/
+data/*.*
 test/data/*.*
+app/lib/*.pyc
+app/lib/__pycache__

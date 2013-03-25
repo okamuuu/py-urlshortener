@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 import sys
-sys.path.append("/Users/okamuuu/project/hello/app/lib")
+sys.path.append("./app/lib")
 import types
 import unittest
 import db
@@ -10,7 +10,7 @@ class TestDb(unittest.TestCase):
     
     def test_db(self):
       
-        id = db.save({'url':'https://github.com/okamuuu'})
+        id = db.find_and_modify({'url':'https://github.com/okamuuu'}, {'url':'https://github.com/okamuuu'})
         print(id)
         url = db.find_one({'url':'https://github.com/okamuuu'})
         print(url)

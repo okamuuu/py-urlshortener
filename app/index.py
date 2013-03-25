@@ -1,7 +1,7 @@
 # -*- coding:utf-8 -*-
 from bottle import  get, post, request, redirect, run, view
 import sys
-sys.path.append("/Users/okamuuu/project/hello/app/lib")
+sys.path.append("./app/lib")
 import db
 import base62
 import time
